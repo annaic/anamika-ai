@@ -1,3 +1,6 @@
+"""This is a utility script to provide message compatibility for Goriila AI
+Credit https://github.com/puppetm4st3r/local_function_calling
+"""
 from openai import OpenAI, AsyncOpenAI
 from typing import Dict, Any, List, cast
 from openai.types.completion_usage import CompletionUsage
