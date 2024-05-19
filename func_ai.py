@@ -1,16 +1,12 @@
 import ast
 import json
-import os
 
 import chainlit as cl
 from chainlit.playground.providers.openai import stringify_function_call
-from dotenv import load_dotenv
 
 from openai_wrapper import AsyncCustomOpenAIClient
 
-load_dotenv()
-
-OPEN_AI_KEY = os.getenv("OPEN_AI_KEY")
+OPEN_AI_KEY = "Fake_key"
 client = AsyncCustomOpenAIClient(api_key=OPEN_AI_KEY, base_url="http://localhost:8000/v1")
 
 tools = [
