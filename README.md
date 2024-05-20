@@ -23,3 +23,10 @@ pip install llama-cpp-python   --extra-index-url https://abetlen.github.io/llama
 python -m llama_cpp.server --model /home/rajan/models/gorilla-openfunctions-v2-GGUF/gorilla-openfunctions-v2-q4_K_M.gguf --chat_format chatml --n_gpu_layers 35 --verbose false
 ```
 This will run llama_cpp.server at port 8000 and OpenAI compatible API available at /v1 end-point
+
+
+### Multi-model in llama-cpp-python
+We can run multiple models in the llama-cpp.server and call the model we are interested in by name.
+```shell
+python -m llama_cpp.server --config_file config.json
+```
